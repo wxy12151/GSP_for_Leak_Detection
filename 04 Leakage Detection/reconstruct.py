@@ -161,7 +161,7 @@ if __name__ == '__main__':
                      in_channels    = np.shape(x_trn)[-1], 
                      out_channels   = np.shape(y_trn)[-1],
                      data_scale     = scale, 
-                     data_bias      = bias).to(device)
+                     data_bias      = bias)
     
     # We offer the user the option to load the previously trained weights
     model.load_model(last_model_path, last_log_path)
